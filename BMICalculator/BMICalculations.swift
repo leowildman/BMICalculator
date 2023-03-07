@@ -11,7 +11,7 @@ import SwiftUI
 
 
 class BMICalculations {
-    func calculateBmi(weight: Double, height: Double, imperial:Bool) -> Double {
+    func calculateBmi(weight: Double, height: Double, imperial:Bool = false) -> Double {
         if imperial{
             return ((weight / 2.205) / pow(((height*2.54)/100), 2)).rounded(toPlaces: 1)
         }
